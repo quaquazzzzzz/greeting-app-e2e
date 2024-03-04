@@ -4,7 +4,7 @@
   "description": "",
   "main": "greetingApp.js",
   "scripts": {
-    "test": "jest", // Dies wurde geändert
+    "test": "jest", 
     "start": "node server.js"
   },
   "keywords": [],
