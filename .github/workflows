@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x] # Passen Sie die Node-Version nach Bedarf an
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm test
+    - name: Start Server and Run E2E Tests
+      run: |
+        npm start &
+        sleep 5 # Warten Sie kurz, damit der Server starten kann
+        # Fügen Sie hier Befehle ein, um E2E-Tests zu starten, z.B. Cypress-Tests
