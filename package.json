@@ -15,7 +15,7 @@
     "express": "^4.18.3"
   },
   "devDependencies": {
-    "cypress": "^9.0.0" // Die Version kann variieren, basierend auf der neuesten verfügbaren Version beim Installieren
+    "cypress": "^9.0.0" 
   }
 }
 
