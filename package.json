@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest", 
     "start": "node server.js"
+    "cy:run": "cypress run"
+
   },
   "keywords": [],
   "author": "",
