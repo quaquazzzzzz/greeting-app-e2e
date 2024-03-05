@@ -4,10 +4,9 @@
   "description": "",
   "main": "greetingApp.js",
   "scripts": {
-    "test": "jest", 
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
     "cy:run": "cypress run"
-
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
     "express": "^4.18.3"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "cypress": "^9.0.0" // Die Version kann variieren, basierend auf der neuesten verfügbaren Version beim Installieren
   }
 }
+
