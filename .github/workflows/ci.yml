@@ -25,5 +25,5 @@ jobs:
     - name: Start Server and Run E2E Tests
       run: |
         npm start &
-        sleep 5 # Warten Sie kurz, damit der Server starten kann
-        # Fügen Sie hier Befehle ein, um E2E-Tests zu starten, z.B. Cypress-Tests
+        sleep 5 
+        #hier muss der Befehl rein, um E2E-Tests zu starten, z.B. Cypress-Tests
